@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MolecularBackground from './components/MolecularBackground';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,14 +38,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
-      <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-      <Hero />
-      <Projects />
-      <About />
-      <Skills />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors relative">
+      <MolecularBackground />
+      <div className="relative z-10">
+        <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+        <Hero />
+        <Projects />
+        <About />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
