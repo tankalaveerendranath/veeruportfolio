@@ -107,14 +107,6 @@
   100% { transform: translateX(-50%); }
 }
 
-.animate-scroll {
-  animation: scroll 30s linear infinite;
-}
-
-.animate-scroll:hover {
-  animation-play-state: paused;
-}
-
 /* Molecular background enhancements */
 .molecular-bg {
   background: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
