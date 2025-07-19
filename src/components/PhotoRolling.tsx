@@ -58,7 +58,7 @@ const PhotoRolling: React.FC = () => {
             {photos.map((photo) => (
               <div
                 key={photo.id}
-                className="kn flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="kn flex-shrink-0 w-96 h-72 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}
@@ -71,7 +71,7 @@ const PhotoRolling: React.FC = () => {
             {photos.map((photo) => (
               <div
                 key={`duplicate-${photo.id}`}
-                className="kn flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="kn flex-shrink-0 w-96 h-72 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}

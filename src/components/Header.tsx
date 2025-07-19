@@ -47,6 +47,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleTheme }) => {
           <a href="#projects" className="bn nav-link">Projects</a>
           <a href="#about" className="bn nav-link">About</a>
           <a href="#skills" className="bn nav-link">Skills</a>
+          <a href="#experience" className="bn nav-link">Experience</a>
           <a href="#contact" className="bn nav-link">Contact</a>
           <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         </nav>
@@ -75,6 +76,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleTheme }) => {
           <a href="#projects" className="mobile-nav-link" onClick={toggleMenu}>Projects</a>
           <a href="#about" className="mobile-nav-link" onClick={toggleMenu}>About</a>
           <a href="#skills" className="mobile-nav-link" onClick={toggleMenu}>Skills</a>
+          <a href="#experience" className="mobile-nav-link" onClick={toggleMenu}>Experience</a>
           <a href="#contact" className="mobile-nav-link" onClick={toggleMenu}>Contact</a>
         </div>
       </div>
