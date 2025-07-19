@@ -9,7 +9,7 @@ const PhotoRolling: React.FC = () => {
     },
     {
       id: 2,
-      url: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'l.png',
       alt: 'Code on laptop screen'
     },
     {
@@ -51,19 +51,19 @@ const PhotoRolling: React.FC = () => {
           </p>
         </div>
         
-        <div className="relative">
+        <div className="kn relative">
           {/* Rolling container */}
-          <div className="flex animate-scroll space-x-6">
+          <div className="kn flex animate-scroll space-x-6">
             {/* First set of photos */}
             {photos.map((photo) => (
               <div
                 key={photo.id}
-                className="flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="kn flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}
                   alt={photo.alt}
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  className="kn w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             ))}
@@ -71,20 +71,20 @@ const PhotoRolling: React.FC = () => {
             {photos.map((photo) => (
               <div
                 key={`duplicate-${photo.id}`}
-                className="flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="kn flex-shrink-0 w-80 h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}
                   alt={photo.alt}
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  className="kn w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             ))}
           </div>
           
           {/* Gradient overlays for smooth edges */}
-          <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-gray-50 dark:from-gray-800 to-transparent pointer-events-none z-10"></div>
-          <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-gray-50 dark:from-gray-800 to-transparent pointer-events-none z-10"></div>
+          <div className="kn absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-gray-50 dark:from-gray-800 to-transparent pointer-events-none z-10"></div>
+          <div className="kn absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-gray-50 dark:from-gray-800 to-transparent pointer-events-none z-10"></div>
         </div>
       </div>
     </section>
