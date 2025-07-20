@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Skills from './components/Skills';
 import WorkExperience from './components/WorkExperience';
+import PhotoRolling from './components/PhotoRolling';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MolecularBackground from './components/MolecularBackground';
@@ -48,6 +49,7 @@ function App() {
         <About />
         <Skills />
         <WorkExperience />
+        <PhotoRolling />
         <Contact />
         <Footer />
       </div>
