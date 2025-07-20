@@ -59,8 +59,8 @@ const RadialBurstBackground: React.FC = () => {
 
     const createParticles = () => {
       particlesRef.current = [];
-      // Start with some initial particles
-      for (let i = 0; i < 50; i++) {
+      // Start with more initial particles for immediate effect
+      for (let i = 0; i < 100; i++) {
         particlesRef.current.push(createParticle());
       }
     };
@@ -155,9 +155,18 @@ const RadialBurstBackground: React.FC = () => {
       // Draw radial burst lines
       drawRadialLines();
 
-      // Add new particles continuously
-      if (Math.random() < 0.3) {
-        particlesRef.current.push(createParticle());
+      // Add new particles continuously - much more frequently
+      for (let i = 0; i < 3; i++) {
+        if (Math.random() < 0.8) {
+          particlesRef.current.push(createParticle());
+        }
+      }
+      
+      // Add burst waves occasionally for extra effect
+      if (Math.random() < 0.02) {
+        for (let i = 0; i < 20; i++) {
+          particlesRef.current.push(createParticle());
+        }
       }
 
       // Update and draw particles
