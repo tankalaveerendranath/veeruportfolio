@@ -1,11 +1,11 @@
 import React from 'react';
 import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
-import FlowingWaveBackground from './FlowingWaveBackground';
+import ButterflyBackground from './ButterflyBackground';
 
 const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-16  relative overflow-hidden">
-      <FlowingWaveBackground />
+      <ButterflyBackground />
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-24 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0 space-y-6">
           <div className="space-y-2">
