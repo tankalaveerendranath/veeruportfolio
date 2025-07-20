@@ -4,7 +4,7 @@ import FlowingWaveBackground from './FlowingWaveBackground';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900 transition-colors relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center pt-16  relative overflow-hidden">
       <FlowingWaveBackground />
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-24 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0 space-y-6">
