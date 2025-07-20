@@ -81,7 +81,7 @@ const RadialBurstBackground: React.FC = () => {
         const trailSize = particle.size * 0.3 * trailScale;
         const trailOpacity = point.opacity * (index / particle.trail.length) * 0.5;
 
-        if (trailOpacity > 0.01) {
+        if (trailOpacity > 0.01 && trailScale > 0.1) {
           ctx.fillStyle = `rgba(59, 130, 246, ${trailOpacity})`;
           ctx.beginPath();
           ctx.arc(trailX, trailY, trailSize, 0, Math.PI * 2);
