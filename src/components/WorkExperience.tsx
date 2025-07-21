@@ -1,6 +1,5 @@
 import React from 'react';
 import { Calendar, MapPin, ExternalLink } from 'lucide-react';
-import MolecularBackground from './MolecularBackground';
 
 interface Experience {
   id: number;
@@ -66,8 +65,7 @@ const experienceData: Experience[] = [
 
 const WorkExperience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors relative">
-      <MolecularBackground />
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
