@@ -151,7 +151,7 @@ const AnimatedBackground: React.FC<AnimatedBackgroundProps> = ({ type }) => {
         // Draw trail
         particle.trail.forEach((point: any, index: number) => {
           const trailOpacity = point.opacity * (index / particle.trail.length);
-          ctx.fillStyle = `rgba(59, 130, 246, ${trailOpacity})`;
+          ctx.fillStyle = `rgba(255, 255, 246, ${trailOpacity})`;
           ctx.beginPath();
           ctx.arc(point.x, point.y, particle.size * 0.3, 0, Math.PI * 2);
           ctx.fill();
