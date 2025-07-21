@@ -46,7 +46,7 @@ const PhotoRolling: React.FC = () => {
   // Dynamic styles for the animation
   const scrollStyle = {
     animation: `scroll ${animationDuration}s linear infinite`,
-    width: `${photos.length * 2 * 408}px` // 408px = 384px width + 24px gap
+    width: `${photos.length * 2 * 424}px` // 424px = 400px width + 24px gap
   };
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors overflow-hidden">
@@ -70,12 +70,12 @@ const PhotoRolling: React.FC = () => {
             {photos.map((photo) => (
               <div
                 key={photo.id}
-                className="flex-shrink-0 w-[800px] h-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="flex-shrink-0 w-[400px] h-72 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}
                   alt={photo.alt}
-                  className="w-900 h-900 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             ))}
@@ -83,7 +83,7 @@ const PhotoRolling: React.FC = () => {
             {photos.map((photo) => (
               <div
                 key={`duplicate-${photo.id}`}
-                className="flex-shrink-0 w-96 h-72 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="flex-shrink-0 w-[400px] h-72 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group"
               >
                 <img
                   src={photo.url}

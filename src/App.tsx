@@ -8,7 +8,6 @@ import WorkExperience from './components/WorkExperience';
 import PhotoRolling from './components/PhotoRolling';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import MolecularBackground from './components/MolecularBackground';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -41,8 +40,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors relative">
-      <MolecularBackground />
-      <div className="relative z-10">
+      <div className="relative">
         <Header isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         <Hero />
         <Projects />

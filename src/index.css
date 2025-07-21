@@ -104,7 +104,7 @@
 /* Photo rolling animation */
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(calc(-50% + 0px)); }
 }
 
 /* Molecular background enhancements */
